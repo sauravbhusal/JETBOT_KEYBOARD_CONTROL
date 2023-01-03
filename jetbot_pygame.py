@@ -16,15 +16,15 @@ while True:
         if event.type == pygame.KEYDOWN:
 
             if event.key == pygame.K_w:
-                print("key W has been pressed") 
+                keypress = 8
 
             if event.key == pygame.K_s:
-                print("key S has been pressed")
+                keypress = 2
 
             if event.key == pygame.K_a:
-                print("key A has been pressed")
+                keypress = 4
 
             if event.key == pygame.K_d:
-                print("key D has been pressed")
+                keypress = 6
                 
                                
