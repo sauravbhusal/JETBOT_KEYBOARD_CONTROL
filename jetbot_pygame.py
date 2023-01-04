@@ -1,9 +1,11 @@
 import pygame
 import sys
+#import os
+#os.environ["SDL_VIDEODRIVER"] = "dummy"
 
 pygame.init()
 
-display = pygame.display.set_mode((100, 100))
+display = pygame.display.set_mode((300,300))
 
 while True:
 
@@ -14,20 +16,24 @@ while True:
 
 
         if event.type == pygame.KEYDOWN:
+            file = open('keyboard.txt','w')
 
             if event.key == pygame.K_w:
-                keypress = 8
                 print ("keypress = forward")
+                file.write('8')
+
 
             if event.key == pygame.K_s:
-                keypress = 2
                 print ("keypress = backward")
+                file.write('2')
 
             if event.key == pygame.K_a:
-                keypress = 4
                 print ("keypress = left")
+                file.write('4')
 
             if event.key == pygame.K_d:
-                keypress = 6
-                print ("keypress = right") 
+                print ("keypress = right")
+                file.write('6') 
+
+            file.close()    
                                
