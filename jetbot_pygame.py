@@ -1,3 +1,4 @@
+
 import pygame
 import sys
 #import os
@@ -35,5 +36,9 @@ while True:
                 print ("keypress = right")
                 file.write('6') 
 
-            file.close()    
-                               
+            
+            if event.key == pygame.K_q:
+                print ("keypress = stop")
+                file.write('0')     
+
+            file.close()   
