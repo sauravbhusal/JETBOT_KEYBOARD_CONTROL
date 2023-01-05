@@ -12,4 +12,10 @@ so i think i need to try another way to control the bot.
 I think i'm gonna use the flask server to localhost the opened file and i'll use jetbot code as a client code and than i'll try to run the bot.
 let's see what happens tomorrow.
 
+day 3:
+finally my code worked.
+now we are able to control our bot with our keyboard.
+what is did was i streamed the output written in the keyboard.txt from the flask server.
+http client was used to get the value from the server and according to the recieved value,i executed the functions.
+
 
