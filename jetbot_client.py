@@ -1,3 +1,7 @@
+from jetbot import Robot
+import time
+import requests
+
 while True:
     res = requests.get('ip_address_where_server_streamed_the_value')
     print ('val = ',res.text)
