@@ -1,6 +1,9 @@
+#we are supposed to run this code on jupyter notebook
+
 from jetbot import Robot
 import time
 import requests
+robot = Robot()
 
 while True:
     res = requests.get('ip_address_where_server_streamed_the_value')
@@ -17,6 +20,9 @@ while True:
         
     elif res.text == '2':
         robot.forward(0.2)
+
+    elif res.text == '1':
+        robot.backward(1)
         
     elif res.text == '0':
         robot.stop()
