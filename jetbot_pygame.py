@@ -39,6 +39,10 @@ while True:
             
             if event.key == pygame.K_q:
                 print ("keypress = stop")
-                file.write('0')     
+                file.write('0')  
+
+            if event.key == pygame.K_t:
+                print ("keypress = turbo")
+                file.write('1')        
 
             file.close()   
